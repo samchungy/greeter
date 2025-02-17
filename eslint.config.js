@@ -1,1 +1,4 @@
-module.exports = require('eslint-config-skuba');
+module.exports = {
+  ...require('eslint-config-skuba'),
+  ignores: [...require('eslint-config-skuba').ignores, 'src/app.js'],
+};
