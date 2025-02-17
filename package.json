@@ -16,12 +16,12 @@
     "skuba-dive": "^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.9.0",
+    "@types/node": "22.13.4",
     "skuba": "9.2.0-main-20250217113038"
   },
   "packageManager": "pnpm@9.12.2",
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "skuba": {
     "entryPoint": "src/app.ts",
