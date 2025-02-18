@@ -2,6 +2,7 @@
   "name": "@seek/greeter",
   "private": true,
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "build": "skuba build",
     "format": "skuba format",
@@ -13,7 +14,8 @@
     "test:watch": "skuba test --watch"
   },
   "dependencies": {
-    "skuba-dive": "^2.0.0"
+    "skuba-dive": "^2.0.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/node": "22.13.4",
