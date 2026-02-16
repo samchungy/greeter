@@ -2,6 +2,12 @@
   "name": "@seek/greeter",
   "private": true,
   "license": "UNLICENSED",
+  "imports": {
+    "#src/*": {
+      "@seek/greeter/source": "./src/*",
+      "default": "./lib/*"
+    }
+  },
   "scripts": {
     "build": "skuba build",
     "format": "skuba format",
@@ -12,21 +18,18 @@
     "test:ci": "skuba test --coverage",
     "test:watch": "skuba test --watch"
   },
-  "dependencies": {
-    "skuba-dive": "^2.0.0"
-  },
   "devDependencies": {
     "@types/node": "22.13.4",
-    "skuba": "9.2.0-main-20250217113038"
+    "skuba": "14.1.1"
   },
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@10.8.1",
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "skuba": {
     "entryPoint": "src/app.ts",
     "template": "greeter",
     "type": "application",
-    "version": "9.1.0"
+    "version": "14.1.1"
   }
 }

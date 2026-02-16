@@ -3,10 +3,9 @@
     "baseUrl": ".",
     "lib": ["ES2024"],
     "outDir": "lib",
-    "paths": {
-      "src": ["src"]
-    },
-    "target": "ES2024"
+    "target": "ES2024",
+    "customConditions": ["@seek/greeter/source"],
+    "rootDir": "."
   },
   "exclude": ["lib*/**/*"],
   "extends": "skuba/config/tsconfig.json"

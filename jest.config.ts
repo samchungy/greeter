@@ -1,6 +1,10 @@
 import { Jest } from 'skuba';
 
 export default Jest.mergePreset({
+  moduleNameMapper: {
+    '^#src/(.*)\\.js$': ['<rootDir>/src/$1'],
+    '^#src/(.*)$': ['<rootDir>/src/$1'],
+  },
   coveragePathIgnorePatterns: ['src/testing'],
   coverageThreshold: {
     global: {

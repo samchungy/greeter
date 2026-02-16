@@ -1,5 +1,8 @@
 {
   "exclude": ["**/__mocks__/**/*", "**/*.test.ts", "src/testing/**/*"],
   "extends": "./tsconfig.json",
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "rootDir": "src"
+  }
 }

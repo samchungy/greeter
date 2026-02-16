@@ -1,1 +1,1 @@
-import 'skuba-dive/register';
+export {};
